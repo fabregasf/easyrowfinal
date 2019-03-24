@@ -1,0 +1,7 @@
+{
+  "name": "er-qrcode",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

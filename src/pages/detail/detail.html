@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar color="green">
+    <ion-buttons start>
+      <button ion-button (click)="close()"><ion-icon name="md-close"></ion-icon></button>
+    </ion-buttons>
+    <ion-title>Nome da empresa</ion-title>
+    <ion-title class="subtitle">{{ object.date }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="border-color">
+    <ion-card-content>
+      <h2 class="center" text-center text-uppercase>Sua senha </h2>
+      <h2 class="center maior" text-center text-uppercase>{{ object.password }}</h2>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="border-color">
+    <ion-card-content>
+      <h2 text-center>Senha Atual</h2>
+      <h2 class="maior" text-center text-uppercase>{{ current_password ? current_password : '---' }}</h2>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="border-color" *ngIf="queue.length > 0">
+    <ion-card-content>
+      <h2 text-center>Pessoas á sua frente:</h2>
+      <h2 class="maior" text-center> {{ queue.length }} </h2>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="border-color" *ngIf="object.place.average_time">
+    <ion-card-content>
+      <h2 text-center>Média de espera:</h2>
+      <h2 text-center>{{ object.place.average_time }}</h2>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="anuncio">
+    <a href-inappbrowser="https://www.santander.com.br/">
+      <img src="assets/imgs/V3qbeMXQc0qd3AKd2atg_propaganda.png" style="display:block;width:95%;height:auto;margin-left:auto;margin-right:auto;" />
+    </a>
+  </ion-card>
+
+</ion-content>

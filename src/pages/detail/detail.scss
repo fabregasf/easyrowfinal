@@ -1,0 +1,33 @@
+page-detail {
+    ion-content.content{
+        background-color: color($colors, light);
+    }
+    ion-card.border-color{
+        border-left: 4px solid color($colors, green);
+    }
+    ion-card.telaatendimento{
+        img{
+            width: 15%;
+            margin: auto;
+        }
+    }
+    a{display: block;}
+
+    .subtitle div{ font-size: 12px; }
+
+    h2.maior{
+        font-size: 1.5em;
+        line-height: 1;
+    }
+    ion-list{
+        background-color: #FFF;
+        ion-item img{
+            float: left;
+            width: 30px;
+        }
+    }
+    button.botao{
+        background-color: color($colors, green);
+        border-style: none;
+    }
+}

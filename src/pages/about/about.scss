@@ -1,0 +1,50 @@
+page-about {
+    
+    
+    .border-color2{
+        border-bottom: 3px solid color($colors, green);
+        box-sizing: border-box;
+        position: absolute;
+        padding-right: 10px;
+        font-size: 1.2em;
+    }   
+    
+    .box{
+        margin: 0px -10px 0px -10px;
+        /* border-radius: 2px; */
+        width: calc(100% - 20px);
+        font-size: 1.4rem;
+        background: #fff;
+        -webkit-box-shadow: none;
+        box-shadow: none; 
+        
+    }
+    
+    @font-face{
+        font-family: Noto Sans Light;
+        src: url('../assets/fonts/noto-sans/NotoSans-Light.ttf') format('truetype');
+    }
+    .box2{
+        margin: 30px -10px;
+        /* border-radius: 2px; */
+        width: 100%;        
+        -webkit-box-shadow: none;
+        box-shadow: none; 
+        
+    }
+    
+    .border-color3{
+        font-family: Noto Sans Light;
+        font-size: 1.0rem;
+    }
+    
+    ion-icon{
+        color: color($colors, green);
+        font-size: 1em;
+    }
+
+    a{
+        color: #222;
+        text-decoration: none;
+    }
+}
