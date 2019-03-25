@@ -47,7 +47,7 @@ export class FirestoreProvider {
         })
       )
   }
-
+  
   saveChave(chave: any, senha: any){
      return new Promise((resolve, reject) => {
       var data = {
